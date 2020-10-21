@@ -1,5 +1,4 @@
-import { Hero } from './hero';
-import { HEROES } from './mock-heroes';
+import { Hero } from './heroes/hero';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
