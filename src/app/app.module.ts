@@ -15,11 +15,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { HeroService } from './hero.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 
 
 @NgModule({
@@ -28,7 +28,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    CrisisListComponent,
     PageNotFoundComponent
   ],
   imports: [
@@ -41,6 +40,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ),
     HeroesModule,
     AppRoutingModule,
+    CrisisCenterModule
   ],
   providers: [MessageService, HeroService],
   bootstrap: [AppComponent]
